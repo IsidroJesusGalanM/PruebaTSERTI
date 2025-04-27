@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/default_button_margin"
+    android:elevation="@dimen/default_elevation_card"
+    android:background="@drawable/user_card_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_card_padding"
+        >
+
+        <TextView
+            android:id="@+id/tv_userID"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/IDCardText"
+            tools:text="1"
+            />
+
+        <Space
+            android:id="@+id/id_spacer"
+            android:layout_width="@dimen/default_card_spacer"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv_userID"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_user"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="@dimen/default_circular_image_size"
+            android:layout_height="@dimen/default_circular_image_size"
+            app:layout_constraintLeft_toRightOf="@id/id_spacer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:shapeAppearanceOverlay="@style/CircularImageForUserList"
+            />
+
+        <Space
+            android:id="@+id/img_spacer"
+            android:layout_width="@dimen/default_card_spacer"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/iv_user"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/img_spacer"
+            style="@style/DefaultTextView"
+            tools:text="Hola"
+            />
+
+        <TextView
+            android:id="@+id/tv_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_user_name"
+            app:layout_constraintLeft_toRightOf="@id/img_spacer"
+            style="@style/DefaultTextView"
+            tools:text="Hola"
+            />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_last_name"
+            app:layout_constraintLeft_toRightOf="@id/img_spacer"
+            style="@style/DefaultTextView"
+            tools:text="Hola"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

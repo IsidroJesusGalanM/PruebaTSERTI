@@ -1,0 +1,103 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PruebaTecnicaSERTI" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    
+    <style name="BottomButtons">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/rounded_button_background</item>
+        <item name="android:layout_margin">@dimen/default_button_margin</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/work_sans_semi_bold</item>
+    </style>
+
+    <style name="WelcomeText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CustomTextFields">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/textfield_rounded_background</item>
+        <item name="android:inputType">text</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:fontFamily">@font/work_sans_regular</item>
+        <item name="android:padding">10dp</item>
+        <item name="maxLines">1</item>
+
+    </style>
+
+    <style name="BackButton">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/back_button_background</item>
+    </style>
+
+    <style name="HeaderTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/default_header_text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/work_sans_medium</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="DefaultTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:fontFamily">@font/work_sans_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="DefaultTextViewSemiBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:fontFamily">@font/work_sans_semi_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MenuTextTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/default_header_text</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/work_sans_medium</item>
+    </style>
+
+
+    <style name="IDCardText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/default_title_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/work_sans_medium</item>
+    </style>
+
+
+    
+    <style name="CircularImageForUserList">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/default_border_radius_circular_image</item>
+    </style>
+
+
+    <style name="RoundedImageForUserDetails">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/default_border_image</item>
+    </style>
+
+    <style name="Theme.PruebaTecnicaSERTI" parent="Base.Theme.PruebaTecnicaSERTI" />
+</resources>

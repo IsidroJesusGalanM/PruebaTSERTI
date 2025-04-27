@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.PruebaTecnicaSERTI" parent="Base.Theme.PruebaTecnicaSERTI">
+        <!-- Transparent system bars for edge-to-edge. -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+    </style>
+
+    <style name="BottomButtons">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/rounded_button_background</item>
+        <item name="android:layout_margin">@dimen/default_button_margin</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

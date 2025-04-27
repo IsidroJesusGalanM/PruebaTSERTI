@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.welcomeActivity.MainActivity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lav_welcome_anim"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:lottie_rawRes="@raw/welcome_anim"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_welcome"
+        android:layout_margin="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_repeatMode="restart"
+        app:lottie_repeatCount="@integer/material_motion_duration_long_1"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/tv_slogan"
+        android:layout_marginBottom="@dimen/welcome_title_margin_bottom"
+        android:textSize="@dimen/default_title_text_size"
+        android:text="@string/welcome_title"
+        android:textAlignment="center"
+        android:fontFamily="@font/work_sans_semi_bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_slogan"
+        android:text="@string/welcome_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/ll_buttons_container"
+        android:layout_marginBottom="@dimen/welcome_margin_bottom"
+        android:textSize="@dimen/default_title_text_size"
+        android:textAlignment="center"
+        android:padding="@dimen/default_screen_padding"
+        android:fontFamily="@font/work_sans_regular"
+        />
+
+
+    
+    <LinearLayout
+        android:id="@+id/ll_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:weightSum="2">
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_register"
+            style="@style/BottomButtons"
+            android:text="Registrarse"
+            />
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_login"
+            style="@style/BottomButtons"
+            android:text="Iniciar Sesión"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

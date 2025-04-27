@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/header_menu_layout"
+    android:layout_height="175dp"
+    android:background="@color/colorSecondary"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/user_icon"
+        app:tint="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv_verified_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MenuTextTitle"
+        android:text="emma.wong@reqres.in"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+</LinearLayout>

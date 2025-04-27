@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/default_button_margin"
+    android:background="@drawable/recent_search_card_background"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/tv_recent_search"
+        style="@style/DefaultTextView"
+        android:layout_margin="@dimen/default_text_field_margin_top"
+        tools:text="Victor"
+        />
+
+</com.google.android.material.card.MaterialCardView>

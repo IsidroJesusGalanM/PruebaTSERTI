@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadingView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiTransparentBlack"
+    android:visibility="gone">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_loading_view_background"
+        android:backgroundTintMode="src_in"
+        android:elevation="8dp"
+        android:padding="24dp"
+        android:shape="rectangle"
+        android:layout_marginHorizontal="@dimen/modal_margin"
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_success"
+            android:layout_width="@dimen/default_element_size_for_loading"
+            android:layout_height="@dimen/default_element_size_for_loading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/success_icon"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/iv_error"
+            android:layout_width="@dimen/default_element_size_for_loading"
+            android:layout_height="@dimen/default_element_size_for_loading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/error_icon"
+            android:visibility="gone"
+            />
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="@dimen/default_element_size_for_loading"
+            android:layout_height="@dimen/default_element_size_for_loading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:id="@+id/spacer1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_space_size"
+
+            app:layout_constraintTop_toBottomOf="@id/progressBar"
+            />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Validando..."
+            android:textSize="@dimen/default_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spacer1"
+            />
+
+        <Space
+            android:id="@+id/spacer2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_space_size"
+            app:layout_constraintTop_toBottomOf="@id/tvMessage"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRetry"
+            style="@style/BottomButtons"
+            android:layout_marginTop="@dimen/default_text_field_margin_top"
+            android:text="Reintentar"
+            android:textAllCaps="false"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spacer2"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

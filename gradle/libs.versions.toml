@@ -1,0 +1,67 @@
+[versions]
+agp = "8.9.1"
+gradle = "8.8.2"
+hiltLifecycleViewmodel = "1.0.0-alpha03"
+kotlin = "2.0.21"
+coreKtx = "1.16.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+daggerHilt = "2.51"
+ksp = "2.0.20-1.0.24"
+realmGradlePlugin = "10.15.1"
+retrofit = "2.11.0"
+lottie = "6.6.6"
+
+realmGradle = "1.16.0"
+realm = "10.18.0"
+glide = "4.16.0"
+navigationFragmentKtx = "2.8.9"
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-hilt-lifecycle-viewmodel = { module = "androidx.hilt:hilt-lifecycle-viewmodel", version.ref = "hiltLifecycleViewmodel" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+#lottieAnim
+lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie" }
+
+#realm
+realm-gradle-plugin-v10151 = { module = "io.realm:realm-gradle-plugin", version.ref = "realmGradlePlugin" }
+realm_library-base = { module = "io.realm.kotlin:library-base", version.ref = "realm" }
+realm-kapt = { module = "io.realm:realm-annotations-processor", version.ref = "realm" }
+
+
+#inyeccion de dependencias
+hilt-android = { group = "com.google.dagger", name = "hilt-android" , version.ref = "daggerHilt"}
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler" , version.ref = "daggerHilt"}
+
+#retrofit
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+
+#glide
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+
+
+[plugins]
+
+kotlinAndroidKsp = { id = "com.google.devtools.ksp", version.ref ="ksp" }
+realm_gradle = { id = "io.realm.kotlin", version.ref = "realmGradle" }
+hiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "daggerHilt" }
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+

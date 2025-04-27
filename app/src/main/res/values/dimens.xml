@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Border radius sizes -->
+    <dimen name="default_border_radius_for_buttons">16dp</dimen>
+    <dimen name="default_border_radius_for_cards">8dp</dimen>
+    <dimen name="default_border_radius_circular_image">50%</dimen>
+    <dimen name="default_border_image">16dp</dimen>
+    <dimen name="default_border_loading_view">20dp</dimen>
+
+
+
+    <!-- Text sizes -->
+    <dimen name="default_text_size">16sp</dimen>
+    <dimen name="default_title_text_size">22sp</dimen>
+    <dimen name="default_bold_title">22sp</dimen>
+    <dimen name="default_header_text">24sp</dimen>
+
+
+
+    <!-- Padding sizes -->
+    <dimen name="default_button_padding">8dp</dimen>
+    <dimen name="default_screen_padding">16dp</dimen>
+    <dimen name="default_text_field_padding_vertical">8dp</dimen>
+    <dimen name="default_text_field_padding_horizontal">16dp</dimen>
+    <dimen name="default_back_button_padding">6dp</dimen>
+    <dimen name="default_card_padding">16dp</dimen>
+
+
+
+    <!-- Margin sizes -->
+    <dimen name="default_button_margin">8dp</dimen>
+    <dimen name="welcome_title_margin_bottom">15dp</dimen>
+    <dimen name="welcome_margin_bottom">30dp</dimen>
+    <dimen name="default_label_margin">8dp</dimen>
+    <dimen name="default_text_field_margin_top">10dp</dimen>
+
+    <dimen name="modal_margin">32dp</dimen>
+
+
+    <!-- Stroke sizes -->
+    <dimen name="default_stroke_width">1dp</dimen>
+
+
+    <!-- space sizes -->
+    <dimen name="default_space_size">10sp</dimen>
+    <dimen name="default_card_spacer">15dp</dimen>
+
+
+    <!-- elevation sizes -->
+    <dimen name="default_elevation_card">4dp</dimen>
+
+    <!-- image sizes -->
+    <dimen name="default_circular_image_size">55dp</dimen>
+    <dimen name="default_image_size_for_details">140dp</dimen>
+
+    <dimen name="default_element_size_for_loading">85dp</dimen>
+
+
+
+
+
+
+
+</resources>
