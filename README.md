@@ -1,6 +1,6 @@
 <h1>Prueba Tecnica para Desarrollador de aplicaciónes moviles en SERTI</h1>
 
-Isidro Jesús Galán Muñoz
+Postulante: Isidro Jesús Galán Muñoz
 
 ‼️ Para este proyecto:
  - La version de android debe ser : Meerkat 2024.3.1 o compatible
