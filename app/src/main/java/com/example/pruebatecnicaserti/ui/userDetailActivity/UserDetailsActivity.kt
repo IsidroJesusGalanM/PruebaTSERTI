@@ -4,17 +4,13 @@ import android.graphics.Color
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.bumptech.glide.Glide
 import com.example.pruebatecnicaserti.R
 import com.example.pruebatecnicaserti.databinding.ActivityUserDetailsBinding
 import com.example.pruebatecnicaserti.repository.UsersRepository
-import com.example.pruebatecnicaserti.ui.extensions.applyInsetsWithOriginalPadding
 import com.example.pruebatecnicaserti.utils.Constants
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
